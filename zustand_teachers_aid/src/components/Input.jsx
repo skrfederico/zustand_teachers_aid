@@ -4,10 +4,10 @@ import { useGroupsStore } from '../store'
 
 export default function Input() {
   const inputRef = useRef()
-  const addGroup = useGroupsStore((state) => state.addGroup)
+  const createGroup = useGroupsStore((state) => state.createGroup)
 
   const add = () => {
-    addGroup(inputRef.current.value)
+    createGroup(inputRef.current.value)
     inputRef.current.value = ''
   }
   return (

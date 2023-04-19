@@ -3,6 +3,7 @@ import { useSettingsStore } from './store'
 
 import Groups from './components/Groups'
 import Input from './components/Input'
+import GroupDetails from './components/GroupDetails'
 
 function App() {
   const toggleDarkMode = useSettingsStore((state) => state.toggleDarkMode)
@@ -23,6 +24,7 @@ function App() {
         <p>Groups</p>
         <Input />
         <Groups />
+        <GroupDetails />
       </div>
     </div>
   )
